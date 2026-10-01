@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="he" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>משחק המילים - Hebrew Word Game</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@700;900&family=Fredoka:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Welcome Screen -->
+  <div id="screen-welcome" class="screen active">
+    <div class="welcome-container">
+      <h1 class="welcome-title">🎮 משחק המילים! 🎮</h1>
+      <h2 class="welcome-subtitle">The Hebrew Word Game</h2>
+      <div class="players-preview">
+        <div class="player-preview player1-bg">
+          <span class="player-emoji">🟦</span>
+          <span>Player 1</span>
+        </div>
+        <div class="vs-text">VS</div>
+        <div class="player-preview player2-bg">
+          <span class="player-emoji">🟥</span>
+          <span>Player 2</span>
+        </div>
+      </div>
+      <button id="btn-start" class="btn-start">Start Game! 🚀</button>
+      <div id="welcome-error" class="welcome-error"></div>
+      <div class="nikkud-toggle-container">
+        <label class="nikkud-toggle">
+          <input type="checkbox" id="nikkud-toggle-welcome" checked>
+          <span class="toggle-slider"></span>
+        </label>
+        <span class="nikkud-label">Show Nikkud (vowel marks)</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Playing Screen -->
+  <div id="screen-playing" class="screen">
+    <div class="game-header">
+      <div class="round-info">Round <span id="round-number">1</span> / <span id="total-rounds">8</span></div>
+      <div id="turn-banner" class="turn-banner"></div>
+      <div class="nikkud-toggle-container small">
+        <label class="nikkud-toggle">
+          <input type="checkbox" id="nikkud-toggle-game" checked>
+          <span class="toggle-slider"></span>
+        </label>
+        <span class="nikkud-label">Nikkud</span>
+      </div>
+    </div>
+
+    <div class="game-main">
+      <div class="player-score player1-bg" id="score-player1">
+        <div class="player-name">Player 1</div>
+        <div class="score-value" id="score-value-1">0</div>
+        <div class="player-emoji-big">🟦</div>
+      </div>
+
+      <div class="word-display-container">
+        <div id="word-display" class="word-display" dir="rtl" lang="he"></div>
+        <div id="word-feedback" class="word-feedback"></div>
+        <div id="word-reveal" class="word-reveal hidden">
+          <span id="reveal-emoji" class="reveal-emoji"></span>
+          <span id="reveal-english" class="reveal-english"></span>
+        </div>
+      </div>
+
+      <div class="player-score player2-bg" id="score-player2">
+        <div class="player-name">Player 2</div>
+        <div class="score-value" id="score-value-2">0</div>
+        <div class="player-emoji-big">🟥</div>
+      </div>
+    </div>
+
+    <div class="timer-bar-container">
+      <div id="timer-bar" class="timer-bar"></div>
+    </div>
+
+    <div id="confetti-container" class="confetti-container"></div>
+  </div>
+
+  <!-- Game Over Screen -->
+  <div id="screen-gameover" class="screen">
+    <div class="gameover-container">
+      <h1 id="gameover-title" class="gameover-title"></h1>
+      <div class="final-scores">
+        <div class="final-score player1-bg">
+          <div class="final-player-name">Player 1</div>
+          <div class="final-score-value" id="final-score-1">0</div>
+        </div>
+        <div id="trophy" class="trophy">🏆</div>
+        <div class="final-score player2-bg">
+          <div class="final-player-name">Player 2</div>
+          <div class="final-score-value" id="final-score-2">0</div>
+        </div>
+      </div>
+      <button id="btn-play-again" class="btn-start">Play Again! 🔄</button>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>

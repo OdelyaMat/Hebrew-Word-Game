@@ -1,0 +1,20 @@
+# Dependencies — install with `npm install` after cloning.
+node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Runtime temp file from atomic words.json save
+data/*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Local tooling config (machine-specific)
+.claude/

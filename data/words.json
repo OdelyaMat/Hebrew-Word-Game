@@ -1,0 +1,84 @@
+{
+  "words": [
+    {
+      "id": "dog",
+      "hebrew": "כלב",
+      "hebrewNikkud": "כֶּלֶב",
+      "transliteration": "kelev",
+      "english": "Dog",
+      "emoji": "🐶",
+      "category": "animal",
+      "cardUid": null
+    },
+    {
+      "id": "cat",
+      "hebrew": "חתול",
+      "hebrewNikkud": "חָתוּל",
+      "transliteration": "chatul",
+      "english": "Cat",
+      "emoji": "🐱",
+      "category": "animal",
+      "cardUid": null
+    },
+    {
+      "id": "fish",
+      "hebrew": "דג",
+      "hebrewNikkud": "דָּג",
+      "transliteration": "dag",
+      "english": "Fish",
+      "emoji": "🐟",
+      "category": "animal",
+      "cardUid": null
+    },
+    {
+      "id": "red",
+      "hebrew": "אדום",
+      "hebrewNikkud": "אָדֹם",
+      "transliteration": "adom",
+      "english": "Red",
+      "emoji": "🔴",
+      "category": "color",
+      "cardUid": null
+    },
+    {
+      "id": "blue",
+      "hebrew": "כחול",
+      "hebrewNikkud": "כָּחֹל",
+      "transliteration": "kachol",
+      "english": "Blue",
+      "emoji": "🔵",
+      "category": "color",
+      "cardUid": null
+    },
+    {
+      "id": "apple",
+      "hebrew": "תפוח",
+      "hebrewNikkud": "תַּפּוּחַ",
+      "transliteration": "tapuach",
+      "english": "Apple",
+      "emoji": "🍎",
+      "category": "food",
+      "cardUid": null
+    },
+    {
+      "id": "banana",
+      "hebrew": "בננה",
+      "hebrewNikkud": "בָּנָנָה",
+      "transliteration": "banana",
+      "english": "Banana",
+      "emoji": "🍌",
+      "category": "food",
+      "cardUid": null
+    },
+    {
+      "id": "flower",
+      "hebrew": "פרח",
+      "hebrewNikkud": "פֶּרַח",
+      "transliteration": "perach",
+      "english": "Flower",
+      "emoji": "🌸",
+      "category": "nature",
+      "cardUid": null
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "hebrew-rfid-game",
+  "version": "1.0.0",
+  "description": "Hebrew vocabulary race game with RFID readers",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "ws": "^8.18.0"
+  }
+}
